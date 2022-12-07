@@ -1,6 +1,10 @@
 body {
     background-image: url('../public/background.JPG');
-
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* .cardColor { */
+    /* background-color: #1b6ae0 !important */
+    /* background: linear-gradient(to right, white, rgb(202, 202, 227)); */
+/* } */
