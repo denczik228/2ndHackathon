@@ -13,15 +13,18 @@ export default function BudgetCard({
   const classNames = []
   //if expense amount is higher than maximum amount, set card background to red
   if (amount > max) {
-    classNames.push("bg-danger", "bg-opacity-10")
+    // classNames.push("bg-warning", "bg-opacity-75")
+    classNames.push("bg-opacity-75")
     //otherwise set card background to gray
   } else if (gray) {
     classNames.push("bg-light")
   }
 
   return (
-    <Card className={classNames.join(" ")}>
-      <Card.Body className='border border-primary'>
+    // <Card className={classNames.join(" ")}>
+    <Card className={`${classNames.join(" ")} cardColor`} >
+      {/* <Card.Body className='border border-primary'> */}
+      <Card.Body className={`border border-primary cardColor`}>
         <Card.Title className="d-flex justify-content-between align-items-baseline fw-normal mb-3">
           <div className="me-2">{name}</div>
           <div className="d-flex align-items-baseline">
@@ -55,7 +58,7 @@ export default function BudgetCard({
             >
               Add Expense
             </Button>
-            // variant = color
+             {/* variant = color */}
             <Button className='border border-warning' onClick={onViewExpensesClick} variant="outline-secondary">
               View Expenses
             </Button>
