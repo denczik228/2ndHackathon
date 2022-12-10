@@ -2,6 +2,7 @@ import { db } from "../db.js"
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
+
 export const register = async (req, res) => {
     //check exist user
     console.log('register=>', req.body)
@@ -18,7 +19,7 @@ export const register = async (req, res) => {
                     .insert(req.body)
                     .returning('*')
                     .then((data) => {
-                        return res.status(200).json({ data: data, msg:'Successfully registered' })
+                        return res.status(200).json({ data: data, msg: 'Successfully registered' })
                     });
             }
             else {
@@ -57,7 +58,7 @@ export const login = async (req, res) => {
         })
         .catch(err => {
             if (err) {
-                return res.json(err);
+                return res.json({ msg: 'Cant access' });
             }
         })
 }
