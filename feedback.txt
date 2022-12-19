@@ -1,0 +1,18 @@
+Hi Den and Lauren!
+
+Let me start by saying that I love your budget app! I really liked the homepage's introduction, 
+reading about you guys, your pictures, I WISH the links were clickable! 
+
+- In the latest version of express, fetch is included! so there is no need to use axios, 
+you can convert your axios post requests to regular fetch requests.
+
+- Your filing system is absolutely perfect! I love the use of folders, the front and back in separate folders, the hooks folder, 
+the 3 pages of the application. Your server.js file is as clean as a whistle. 
+Makes the application understandable, logical and organized.
+
+- I love the use of bootstrap. It looks neat, user-friendly, and simple to operate.
+
+- Good job on the use of comments!
+
+Overall, I absolutely loved your project! Cant wait to see what each of you will do on your final project
+Well done guys
